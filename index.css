@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 10;
+}
+
+body{
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#conteiner{
+    width: 70;
+    margin: 0px auto;
+    border: 2px solid black;
+}
+
+header{
+    background-color: rgb(42, 168, 168);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: blue;
+    border-bottom: 3px dashed black;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+nav{
+    background-color: seagreen;
+    height: 50px;
+    line-height: 30px;
+    border-bottom: 3px black dashed;
+}
+
+#aside{
+    float: left;
+    width: 80%;
+    background-color: blueviolet;
+}
+
+#separador{
+    clear: both;
+}
+
+#content{
+    float: left;
+    width: calc(80% - 40px);
+    min-height: 500px;
+    background: rgba(red, green, rgb(53, 53, 61), alpha);
+}
+
+#aside{
+    float: left;
+    width: 20%;
+    background: rgb(rgb(190, 101, 101), rgb(44, 51, 44), rgb(206, 206, 228));
+    min-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    border-left: 2px solid black;
+    padding: 10px;
+}
+
+footer{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.articulo{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(red, green, blue);
+}
+.articulo h2{
+    font-size: 20px;
+}
+
