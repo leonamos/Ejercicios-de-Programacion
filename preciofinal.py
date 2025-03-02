@@ -8,7 +8,7 @@ ganancia = float(ganancia)
 impuesto = input("ingrese el impuesto: ")
 impuesto = float(impuesto)
 
-#funcion nombre 1 avariable ()
+#funcion nombre 1 variable ()
 def calcularimpuesto(impuesto, precio):
     return impuesto * precio
 
@@ -19,5 +19,5 @@ def calcularpreciofinal(precio, impuesto, ganancia):
     precio1 = calcularganancia(ganancia, precio) + precio
     impuestoventa = calcularimpuesto(impuesto, precio1)
     return precio1 + impuestoventa
+
 print(calcularpreciofinal(precio, impuesto, ganancia))
-ijbisdubhsouvybervwrgrh
