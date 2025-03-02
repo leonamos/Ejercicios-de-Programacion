@@ -2,7 +2,7 @@
 
 usuario = list()
 
-usuario = list("amos leon") # string str
+usuario = list("amos leon") # string str jajajajjajjajj
 usuario.append("12345")      # string str
 usuario.append(1000)        # int
 
@@ -20,8 +20,8 @@ acciones.append("pago de recibo")
 acciones.append("retirar")
 
 usuario2 = list()
-usuario2 = list("leon")     # string str
-usuario2.append("12345")    # string str
+usuario2 = list("leon")     # string str jajajjajjajajja
+usuario2.append("12345")    # string str  puesi xd 
 usuario2.append(1500)       # int
 
 def registrar():
