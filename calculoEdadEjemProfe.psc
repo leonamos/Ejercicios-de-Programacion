@@ -35,7 +35,7 @@ Algoritmo calculoEdadEjemProfe
 	
 	actual = 2025
 	
-	// que el a;o que ingrese sema mayor a 0
+	// que el a;o que ingrese suma mayor a 0
 	// sea mayor a fecha acrual -100
 	si nacimiento > 0 Y  actual - 100 > 1900
 		edad = actual - nacimiento

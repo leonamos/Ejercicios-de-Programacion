@@ -1,6 +1,6 @@
 Algoritmo division 
 	
-	//Escribe un programa que lea un número y determine si es par o impar.
+	//Escribe un programa que lea un numero y determine si es par o impar.
 	
 	a = 0
 	b = 0

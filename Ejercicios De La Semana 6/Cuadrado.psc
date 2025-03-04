@@ -1,6 +1,6 @@
 Algoritmo cuadrado
 	
-	//Enunciado: Escribe un programa que pida un número al usuario y muestre el doble de ese número.
+	//Enunciado: Escribe un programa que pida un numero al usuario y muestre el doble de ese numero.
 	
 	original = 0
 	cuadrado1 = 0

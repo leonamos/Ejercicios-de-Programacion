@@ -2,7 +2,7 @@ Algoritmo CalculadoraDeEdad
 	
 	definir nacimiento, actual, total Como Entero
     
-    Escribir "ingrese su año de nacimiento:"
+    Escribir "ingrese su anio de nacimiento:"
     Leer nacimiento 
 	actual = 2025
 	
@@ -11,7 +11,7 @@ Algoritmo CalculadoraDeEdad
 		escribir ( "su edad es")
 		Escribir (total)
 	SiNo
-		Escribir ("Error: el año de nacimiento no puede ser mayor al año actual")
+		Escribir ("Error: el ano de nacimiento no puede ser mayor al ano actual")
 	FinSi
 
 	
