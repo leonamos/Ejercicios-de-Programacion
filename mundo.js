@@ -33,7 +33,7 @@ function numeroAleatorio(numero){
 numeroAleatorio(10)
 
 
-function tablMultiplicar(){
+function tablaMultiplicar(){
 
 
 }
