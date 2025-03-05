@@ -11,15 +11,14 @@ recibo.append(["124", 845])
 recibo.append(["125", 67])
 recibo.append(["126", 500])
 recibo.append(["127", 100])
-recibo.append(["128", 1000])
 
 acciones = list()
 acciones.append("depositar")
 acciones.append("pago de recibo")
-acciones.append("retirar")
+acciones.append("retiro")
 
 usuario2 = list()
-usuario2 = list("leon")     # string str
+usuario2.append("leon")     # string str
 usuario2.append("12345")    # string str
 usuario2.append(1500)       # int
 
