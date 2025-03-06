@@ -1,5 +1,11 @@
 #un cajero automatico
 
+usuarios = {  # Diccionario para almacenar múltiples usuarios
+    "amosleon": "1234",
+    "leon": "12345",
+    "amos": "123456"
+}
+
 usuario = list()
 usuario = list("amosleon") # string str
 usuario.append("1234")      # string str
@@ -22,11 +28,16 @@ usuario2.append("leon")     # string str
 usuario2.append("12345")    # string str
 usuario2.append(1500)       # int
 
+
+
 def registrar():
     usuarioC = input("Ingrese su nombre: ")
     usuarioRegistrado = input("Ingrese su password: ")
-    if usuario == usuarioC[0] and usuarioRegistrado[0] == usuario[1]:
-        print("Bienvenido al cajero automatico")
+
+    if usuarioC in usuarios and usuarios[usuarioC] == usuarioRegistrado:
+        print("Bienvenido al cajero automático")
     else:
         print("Usuario o contraseña incorrectos")
-        return registrar()
+
+registrar()  # Ejecutar la función
+
