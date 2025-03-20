@@ -1,11 +1,11 @@
 # uso simple 
 simple = "Soy un texto simple"
 
-#texto multilinea
+# texto multilinea
 textoGrande = ''' Tengo muchas lineas 
                 muchas mas lineas 
 '''
-#Concatenar (Unir text0)
+# Concatenar (Unir text0)
 unir = simple + textoGrande
 #multplicar texto|
 unir = simple * 2
