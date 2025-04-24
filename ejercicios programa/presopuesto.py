@@ -18,7 +18,7 @@ if valorCafe == valorNaranja:
 else:
     print("El valor es diferente")
 
-if not false :
+if not False :
     print("Solo saldre si es verdad")
 
 
