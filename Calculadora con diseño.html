@@ -5,6 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculadora</title>
 
+<style>
+    body {
+        background-color: #1c1c1e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+    }
+    .calculator {
+        background-color: #333;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 320px;
+        box-shadow: 0px 0px 20px #000;
+    }
+    .display {
+        background-color: #000;
+        color: white;
+        font-size: 2.5em;
+        text-align: right;
+        padding: 20px;
+        word-wrap: break-word;
+    }
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    button {
+        background-color: #505050;
+        border: 1px solid #333;
+        color: white;
+        font-size: 1.5em;
+        padding: 20px;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.1s;
+    }
+    button.operator {
+        background-color: #ff9500;
+    }
+    button:active {
+        transform: scale(0.95);
+    }
+    button.zero {
+        grid-column: span 2;
+    }
+</style>
+</head>
+
+<body></body>
 <div class="calculator">
     <div id="display" class="display">0</div>
     <div class="buttons">
@@ -34,6 +85,12 @@
     </div>
 </div>
 
+<script>
+    let currentInput = 0;
+
+    function updateDisplay() {
+        document.getElementById("display").textContent = currentInput;
+    }
 
 
 
@@ -43,5 +100,15 @@
 
 
 
-</head>
+
+
+
+</script>
+
+
+
+
+
+
+
 </html>
