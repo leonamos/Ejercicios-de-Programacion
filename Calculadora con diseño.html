@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta>charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculadora</title>
 
@@ -54,9 +54,9 @@
     }
 </style>
 </head>
+<body>
 
-<body></body>
-<div class="calculator">
+    <div class="calculator">
     <div id="display" class="display">0</div>
     <div class="buttons">
         <button onclick="clearDisplay()">C</button>
@@ -92,23 +92,61 @@
         document.getElementById("display").textContent = currentInput;
     }
 
+    function appendNumber(num) {
+        if (currentInput === 0) {
+            currentInput = num;
+        } else {
+            currentInput += num;
+        }
+        updateDisplay();
+    }
 
+    function appendOperator(op) {
+        if (currentInput.slice(-1).match(/[+\-*/%]/)) {
+            currentInput = currentInput.slice(0, -1);
+        }
+        currentInput += op;
+        updateDisplay();
+    }
 
+    function clearDisplay() {
+        currentInput = "0";
+        updateDisplay();
+    }
 
+    function deleteLast() {
+        if (currentInput.length > 1) {
+            currentInput = currentInput.slice(0, -1);
+        } else {
+            currentInput = "0";
+        }
+        updateDisplay();
+    }
 
+    function calculate() {
+        try {
+            currentInput = eval(currentInput).toString();
+        } catch (error) {
+            currentInput = "Error";
+        }
+        updateDisplay();
+    }
 
+    document.addEventListener('keydown', function(event) {
+        const key = event.key;
+        if (!isNaN(key) || key === '.') {
+            appendNumber(key);
+        } else if (["+", "-", "*", "/", "%"].includes(key)) {
+            appendOperator(key);
+        } else if (key === "Enter" || key === "=") {
+            calculate();
+        } else if (key === "Backspace") {
+            deleteLast();
+        } else if (key.toLowerCase() === "c") {
+            clearDisplay();
+        }
+    });
+</script>\
 
-
-
-
-
-
-</script>
-
-
-
-
-
-
-
+</body>
 </html>
